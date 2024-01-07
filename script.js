@@ -1,6 +1,6 @@
 let button  = document.querySelector("button");
 let input = document.querySelector("input");
-let age = document.getElementById("age");
+let p = document.getElementById("age");
 
 button.addEventListener("click",(e)=>{
 
@@ -12,9 +12,9 @@ button.addEventListener("click",(e)=>{
 
     let age = today_Date.getFullYear() - Bday.getFullYear();
 
-    const diffInMill = today_Date.getTime() - Bday.getTime();
+    // const diffInMill = today_Date.getTime() - Bday.getTime();
 
-    const milliSecondinyear = 365 * 24 * 60 * 60 *1000;
+    // const milliSecondinyear = 365 * 24 * 60 * 60 *1000;
 
     if(input.value ==""){
         alert("Please enter your birthday");
@@ -29,7 +29,7 @@ button.addEventListener("click",(e)=>{
         }
     }
 
-    const year  = Math.floor(diffInMill / milliSecondinyear);
+
     
-    age.innerText = `Your age is ${year} years old` ;
+    p.innerText = `Your age is ${age} years old` ;
 });
